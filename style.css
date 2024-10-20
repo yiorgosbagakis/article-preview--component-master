@@ -1,0 +1,251 @@
+body {
+ font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  background-color: hsl(210, 46%, 95%);
+  font-size: 13px;
+}
+
+h1 {
+ margin: 0;
+ font-size: 20px;
+ color: hsl(217, 19%, 35%);
+}
+
+article {
+ display: flex;
+ width: 730px;
+ height: 280px;
+ background-color: white;
+ margin: auto;
+ margin-top: 30vh;
+ border-radius: 12px;
+ color: hsl(214, 17%, 51%);
+}
+
+.info-container {
+ display: flex;
+ flex-direction: column;
+ width: 446px;
+ padding: 32px 33px 33px 33px;
+ margin: 
+}
+
+picture.drawers {
+ width: 285px;
+ height: 280px;
+ background-image: url("images/drawers.jpg");
+ background-position: center;
+ background-size: cover;
+ border-radius: 12px 0 0 12px;
+}
+
+.author-details {
+display: flex;
+align-items: center;
+}
+
+picture.avatar img {
+ border-radius: 50px;
+ margin-right: 20px;
+}
+
+.author-name {
+ display: flex;
+ flex-direction: column;
+}
+
+.author-name author {
+  font-weight: 700;
+  color:hsl(217, 19%, 35%);
+ }
+ 
+
+.author-area {
+ position: relative;
+ display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.share-btn {
+ background-color: hsl(210, 46%, 95%);
+ padding: 10px;
+ padding-left: 11px;
+ padding-right: 11px;
+ border-radius: 50px;
+}
+
+.share-btn svg {
+  color: hsl(217, 19%, 35%);
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.share-btn svg .svg-clicked {
+  color: white;
+}
+
+.share-btn:hover {
+ cursor: pointer;
+}
+
+.share-btn svg:hover {
+ cursor: pointer;
+ background-color: hsl(212, 23%, 69%);
+ fill: aliceblue;
+}
+
+#tooltip.visible {
+  visibility: visible;
+ }
+
+ .share-btn.btn-clicked {
+  background-color:  hsl(217, 19%, 35%);
+  color:  #fff;
+ }
+
+#tooltip {
+visibility: hidden;
+ position: absolute;
+ top:-55px;
+ left:260px;
+width:250px;
+height:55px;
+background-color: hsl(217, 19%, 35%);
+color: white;
+border-radius: 10px;
+box-sizing: border-box;
+box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.triangle {
+ position: absolute;
+ top:41px;
+ left:120px;
+ width:17px;
+ height: 17px;
+ background-color: hsl(217, 19%, 35%);
+ transform: rotate(45deg);
+}
+
+span.share-text {
+  padding: 15px;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  width: 220px;
+  height: 20px;
+  display: flex;
+}
+
+span.share-text p {
+  letter-spacing: 5px;
+  font-weight: 400;
+  color: hsl(212, 23%, 69%);;
+}
+
+.attribution {
+  margin-top: 40px;
+  text-align: center;
+}
+
+
+@media  screen and (max-width: 740px) {
+  
+  article {
+    flex-direction: column;
+    width: 327px;
+    height: 502px;
+    margin: auto;
+    margin-top: 20vh;
+    border-radius: 12px;
+  }
+
+  .info-container {
+    width: 277px;
+    padding: 22px 3px 16px 23px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  picture.drawers {
+    width: 327px;
+    height: 280px;
+    background-image: url("images/drawers.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px 12px 0 0;
+  }
+
+  #tooltip {
+    visibility: hidden;
+    position: absolute;
+    top:-5px;
+    left:-23px;
+    width:327px;
+    height:75px;
+    border-radius: 0 0 12px 12px;
+    }
+    
+  .triangle {
+    position: absolute;
+    display: none;
+    top:41px;
+    left:120px;
+    width:17px;
+    height: 17px;
+    background-color: hsl(217, 19%, 35%);
+    transform: rotate(45deg);
+    }
+
+    .info-container p {
+      margin-bottom: 50px;
+    }
+
+    .share-btn {
+      background-color: hsl(210, 46%, 95%);
+      border-radius: 50px;
+      z-index: 1000;
+    }
+
+    .author-area {  
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    
+    span.share-text {
+      padding: 25px;
+      text-align: center;
+      justify-content: space-around;
+      align-items: center;
+      width: 220px;
+      height: 20px;
+      display: flex;
+    }
+    
+    span.share-text p {
+      letter-spacing: 5px;
+      padding-top: 35px;
+      font-weight: 400;
+      color: hsl(212, 23%, 69%);
+    }
+
+    .share-btn svg .svg-clicked {
+      color:  hsl(217, 19%, 35%);
+    }
+
+    .share-btn.btn-clicked {
+      background-color:hsl(212, 23%, 69%);
+      color:   hsl(217, 19%, 35%);
+    }
+
+}
